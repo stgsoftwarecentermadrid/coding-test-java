@@ -1,5 +1,7 @@
 package com.straumann.publicproductcatalog.repository;
 
+import java.math.BigDecimal;
+
 public class ProductDAO {
 
     private Integer id;
@@ -7,11 +9,11 @@ public class ProductDAO {
     private String brand;
     private String code;
     private ProductCategoryDAO category;
-    private Float price;
+    private BigDecimal price;
     private PriceCurrencyDAO currency;
     private ProductStatusDAO status;
 
-    public ProductDAO(Integer id, String name, String brand, String code, ProductCategoryDAO category, Float price, PriceCurrencyDAO currency) {
+    public ProductDAO(Integer id, String name, String brand, String code, ProductCategoryDAO category, BigDecimal price, PriceCurrencyDAO currency) {
         this.id = id;
         this.name = name;
         this.brand = brand;

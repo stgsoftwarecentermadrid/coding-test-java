@@ -1,5 +1,7 @@
 package com.straumann.publicproductcatalog.controller;
 
+import java.math.BigDecimal;
+
 public class ProductDTO {
 
     private Integer id;
@@ -7,11 +9,11 @@ public class ProductDTO {
     private String brand;
     private String code;
     private ProductCategoryDTO category;
-    private Float price;
+    private BigDecimal price;
     private PriceCurrencyDTO currency;
     private ProductStatusDTO status;
 
-    public ProductDTO(Integer id, String name, String brand, String code, ProductCategoryDTO category, Float price, PriceCurrencyDTO currency) {
+    public ProductDTO(Integer id, String name, String brand, String code, ProductCategoryDTO category, BigDecimal price, PriceCurrencyDTO currency) {
         this.id = id;
         this.name = name;
         this.brand = brand;
