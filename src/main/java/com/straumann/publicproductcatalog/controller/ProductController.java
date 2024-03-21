@@ -14,4 +14,16 @@ public class ProductController {
         return ResponseEntity.notFound().build();
     }
 
+    //TODO añade url del endpoint
+    public ResponseEntity<ProductDTO> modifyProduct(ProductDTO modifiedProductDTO) {
+        //TODO rellena el cuerpo del método
+        return ResponseEntity.notFound().build();
+    }
+
+    //TODO añade url del endpoint
+    public ResponseEntity<ProductDTO> addProduct(ProductDTO newProductDTO) {
+        //TODO rellena el cuerpo del método
+        return ResponseEntity.notFound().build();
+    }
+
 }
