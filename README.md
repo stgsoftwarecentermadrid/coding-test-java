@@ -1,10 +1,10 @@
-# Reto: Servicio de gestión de productos de Straumann
+# :trophy: Reto: Servicio de gestión de productos de Straumann
 
 Este repositorio contiene una API parcialmente desarrollada para desarrollar un servicio que se encargue de gestionar los productos de Straumann. Tu objetivo será implementar las historias de usuario que se describen más adelante.
 
 Los supuestos están basados en un hipotético _equipo de gestión de los productos de Straumann_, que demanda una serie de verificaciones automáticas para clasificar los productos en base a una serie de características concretas.
 
-## Historias de usuario
+## :pencil: Historias de usuario
 
 - Yo como equipo de gestión de los productos de Straumann quiero que los usuarios no vean productos que estén descatalogados. Un producto se considera descatalogado si tiene su propiedad status como DISCONTINUED.
 
@@ -16,7 +16,7 @@ Los supuestos están basados en un hipotético _equipo de gestión de los produc
 
 - Yo como cliente del catálogo de productos de Straumann quiero poder ver todos los productos disponibles para su compra y poder filtrarlos por categoria de producto, por marca, y por orden de precio (de mayor a menor y de menor a mayor).
 
-## Consideraciones importantes
+## :warning: Consideraciones importantes
 
 En este proyecto te proporcionamos un pequeño _esqueleto_ escrito en Java usando [Spring Boot](https://spring.io/projects/spring-boot).
 
@@ -43,7 +43,7 @@ A continuación se enumeran los requisitos mínimos para ejecutar el proyecto:
 
 Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar errores.
 
-## Criterios de aceptación
+## :white_check_mark: Criterios de aceptación
 
 - El código debe compilar y ser ejecutable :dancer:
 
@@ -59,4 +59,4 @@ Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar e
 
 - Puedes añadir cualquier cosa que veas relevante para la legibilidad o mantenimiento del codigo.
 
-### Good luck 🍀
+### Good luck :four_leaf_clover:
