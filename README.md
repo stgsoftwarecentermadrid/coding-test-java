@@ -39,7 +39,7 @@ $ ./gradlew bootRun
 A continuación se enumeran los requisitos mínimos para ejecutar el proyecto:
 
 - Java 17
-- Gradle XXX
+- Gradle 8.6
 
 Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar errores.
 
@@ -47,10 +47,16 @@ Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar e
 
 - El código debe compilar y ser ejecutable :dancer:
 
-- Debes proporcionar 2 endpoints:
+- Debes proporcionar 3 endpoints:
 
   - Uno para la obtenición de los productos por parte de un cliente del catálogo Straumann, donde pueda ver los productos y filtarlos por categoria, por marca y por orden de precio.
 
   - Otro para la posible modificación de precios o disponibilidad de uno de los productos por parte del equipo de gestión de los productos de Straumann.
 
   - Otro para la posible inclusion de nuevos productos por parte del equipo de gestión de los productos de Straumann.
+
+### Otras
+
+- Puedes añadir cualquier cosa que veas relevante para la legibilidad o mantenimiento del codigo.
+
+### Good luck 🍀
