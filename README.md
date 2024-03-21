@@ -8,11 +8,13 @@ Los supuestos están basados en un hipotético _equipo de gestión de los produc
 
 - Yo como equipo de gestión de los productos de Straumann quiero que los usuarios no vean productos que estén descatalogados. Un producto se considera descatalogado si tiene su propiedad status como DISCONTINUED.
 
-- Yo como equipo de gestión de los productos de Straumann quiero poder modificar los precios de los productos actuales e indicar si tienen una oferta.
+- Yo como equipo de gestión de los productos de Straumann quiero poder añadir productos al catálogo, pudiendo indicar su nombre, marca, codigo, categoria y precio. Por defecto, la moneda del producto será en Euros (EUR) y el estado del producto será en stock.
 
-- Yo como equipo de gestion de los productos de Straumann quiero tener un proceso automático que se ejecute todas las noches
+- Yo como equipo de gestión de los productos de Straumann quiero poder modificar los precios de los productos actuales y la disponibilidad del mismo.
 
-- Yo como cliente del catálogo quiero poder ver todos los productos disponibles para su compra y poder filtrarlos por categoria de producto, o por marca.
+- Yo como equipo de gestión de los productos de Straumann quiero tener un proceso automático que se ejecute todas las noches y que, aquellos productos que se encuentren descatalogados, se borren del sistema.
+
+- Yo como cliente del catálogo de productos de Straumann quiero poder ver todos los productos disponibles para su compra y poder filtrarlos por categoria de producto, por marca, y por orden de precio (de mayor a menor y de menor a mayor).
 
 ## Consideraciones importantes
 
@@ -45,4 +47,10 @@ Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar e
 
 - El código debe compilar y ser ejecutable :dancer:
 
-- Debes proporcionar 3 endpoints: Uno para calcular la puntuación de todos los anuncios, otro para listar los anuncios para un usuario de idealista y otro para listar los anuncios para el responsable de del departamento de gestión de calidad.
+- Debes proporcionar 2 endpoints:
+
+  - Uno para la obtenición de los productos por parte de un cliente del catálogo Straumann, donde pueda ver los productos y filtarlos por categoria, por marca y por orden de precio.
+
+  - Otro para la posible modificación de precios o disponibilidad de uno de los productos por parte del equipo de gestión de los productos de Straumann.
+
+  - Otro para la posible inclusion de nuevos productos por parte del equipo de gestión de los productos de Straumann.
