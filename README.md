@@ -8,13 +8,13 @@ Los supuestos están basados en un hipotético _equipo de gestión de los produc
 
 - Yo como equipo de gestión de los productos de Straumann quiero que los usuarios no vean productos que estén descatalogados. Un producto se considera descatalogado si tiene su propiedad status como DISCONTINUED.
 
-- Yo como equipo de gestión de los productos de Straumann quiero poder añadir productos al catálogo, pudiendo indicar su nombre, marca, codigo, categoria y precio. Por defecto, la moneda del producto será en Euros (EUR) y el estado del producto será en stock.
+- Yo como equipo de gestión de los productos de Straumann quiero poder añadir productos al catálogo, pudiendo indicar su nombre, marca, código, categoría y precio. Por defecto, la moneda del producto será en Euros (EUR) y el estado del producto será en stock.
 
 - Yo como equipo de gestión de los productos de Straumann quiero poder modificar los precios de los productos actuales y la disponibilidad del mismo.
 
 - Yo como equipo de gestión de los productos de Straumann quiero tener un proceso automático que se ejecute todas las noches y que, aquellos productos que se encuentren descatalogados, se borren del sistema.
 
-- Yo como cliente del catálogo de productos de Straumann quiero poder ver todos los productos disponibles para su compra y poder filtrarlos por categoria de producto, por marca, y por orden de precio (de mayor a menor y de menor a mayor).
+- Yo como cliente del catálogo de productos de Straumann quiero poder ver todos los productos disponibles para su compra y poder filtrarlos por categoría de producto, por marca, y por orden de precio (de mayor a menor y de menor a mayor).
 
 ## :warning: Consideraciones importantes
 
@@ -30,7 +30,7 @@ $ ./gradlew bootRun
 
 **La persistencia de datos no forma parte del objetivo del reto**. Si no vas a usar el esqueleto que te proporcionamos, te sugerimos que la simplifiques tanto como puedas (con una base de datos embebida, "persistiendo" los objetos en memoria, usando un fichero...).
 
-**El diseño de una interfaz gráfica tampoco** forma parte del alcance del reto, por tanto no es necesario que la implementes.
+**El diseño de una interfaz gráfica tampoco** forma parte del alcance del reto, por tanto, no es necesario que la implementes.
 
 **Nota:** A lo que más importancia damos es a tener un código limpio y de calidad.
 
@@ -49,7 +49,7 @@ Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar e
 
 - Debes proporcionar 3 endpoints:
 
-  - Uno para la obtenición de los productos por parte de un cliente del catálogo Straumann, donde pueda ver los productos y filtarlos por categoria, por marca y por orden de precio.
+  - Uno para la obtención de los productos por parte de un cliente del catálogo Straumann, donde pueda ver los productos y filtrarlos por categoría, por marca y por orden de precio.
 
   - Otro para la posible modificación de precios o disponibilidad de uno de los productos por parte del equipo de gestión de los productos de Straumann.
 
@@ -57,6 +57,8 @@ Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar e
 
 ### Otras
 
-- Puedes añadir cualquier cosa que veas relevante para la legibilidad o mantenimiento del codigo.
+- Se valorará de manera positiva la inclusión de pruebas automáticas de código o testing.
+
+- Puedes añadir cualquier cosa que veas relevante para la legibilidad o mantenimiento del código.
 
 ### Good luck :four_leaf_clover:
