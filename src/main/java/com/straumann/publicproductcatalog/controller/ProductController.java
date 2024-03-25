@@ -8,21 +8,21 @@ import java.util.List;
 @RestController
 public class ProductController {
 
-    //TODO añade url del endpoint
+    //TODO add endpoint url
     public ResponseEntity<List<ProductDTO>> publicProductsListing() {
-        //TODO rellena el cuerpo del método
+        //TODO fill body method
         return ResponseEntity.notFound().build();
     }
 
-    //TODO añade url del endpoint
+    //TODO add endpoint url
     public ResponseEntity<ProductDTO> modifyProduct(ProductDTO modifiedProductDTO) {
-        //TODO rellena el cuerpo del método
+        //TODO fill body method
         return ResponseEntity.notFound().build();
     }
 
-    //TODO añade url del endpoint
+    //TODO add endpoint url
     public ResponseEntity<ProductDTO> addProduct(ProductDTO newProductDTO) {
-        //TODO rellena el cuerpo del método
+        //TODO fill body method
         return ResponseEntity.notFound().build();
     }
 
