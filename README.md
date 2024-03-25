@@ -1,64 +1,73 @@
-# :trophy: Reto: Servicio de gestión de productos de Straumann
+# :trophy: Challenge: Straumann Product Management Service
 
-Este repositorio contiene una API parcialmente desarrollada para desarrollar un servicio que se encargue de gestionar los productos de Straumann. Tu objetivo será implementar las historias de usuario que se describen más adelante.
+[![en](https://img.shields.io/badge/lang-en-yellow.svg)](https://github.com/stgsoftwarecentermadrid/coding-test-java/blob/main/README.md)
+[![es](https://img.shields.io/badge/lang-es-green.svg)](https://github.com/stgsoftwarecentermadrid/coding-test-java/blob/main/README.es.md)
 
-Los supuestos están basados en un hipotético _equipo de gestión de los productos de Straumann_, que demanda una serie de verificaciones automáticas para clasificar los productos en base a una serie de características concretas.
+This repository hosts a partially developed API aimed at facilitating the management of Straumann products. Your objective will be to implement the user stories described below.
 
-## :pencil: Historias de usuario
+The assumptions are based on a hypothetical _Straumann product management team_, which requires a series of automated checks to classify products based on specific characteristics.
 
-- Yo como equipo de gestión de los productos de Straumann quiero que los usuarios no vean productos que estén descatalogados. Un producto se considera descatalogado si tiene su propiedad status como DISCONTINUED.
+## :pencil: User Stories
 
-- Yo como equipo de gestión de los productos de Straumann quiero poder añadir productos al catálogo, pudiendo indicar su nombre, marca, código, categoría y precio. Por defecto, la moneda del producto será en Euros (EUR) y el estado del producto será en stock.
+- As a Straumann product management team, I want users not to see products that are discontinued. A product is considered discontinued if its status property is set to DISCONTINUED.
 
-- Yo como equipo de gestión de los productos de Straumann quiero poder modificar los precios de los productos actuales y la disponibilidad del mismo.
+- As a Straumann product management team, I want to be able to add products to the catalog, specifying their name, brand, code, category, and price. By default, the product's currency will be in Euros (EUR), and the product's state will be in stock.
 
-- Yo como equipo de gestión de los productos de Straumann quiero tener un proceso automático que se ejecute todas las noches y que, aquellos productos que se encuentren descatalogados, se borren del sistema.
+- As a Straumann product management team, I want to be able to modify the prices of current products and their availability.
 
-- Yo como cliente del catálogo de productos de Straumann quiero poder ver todos los productos disponibles para su compra y poder filtrarlos por categoría de producto, por marca, y por orden de precio (de mayor a menor y de menor a mayor).
+- As a Straumann product management team, I want to have an automatic process that runs every night and deletes discontinued products from the system.
 
-## :warning: Consideraciones importantes
+- As a customer of the Straumann product catalog, I want to be able to view all available products for purchase and filter them by product category, brand, and price order (from highest to lowest and from lowest to highest).
 
-En este proyecto te proporcionamos un pequeño _esqueleto_ escrito en Java usando [Spring Boot](https://spring.io/projects/spring-boot).
+## :warning: Important Considerations
 
-En dicho _esqueleto_ hemos dejado para que completes un [Controller](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/Controller.html) y un [Repository](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/Repository.html) en memoria. Puedes crear las clases y métodos que consideres necesarios.
+In this project, we provide you with a small Java _skeleton_ using [Spring Boot](https://spring.io/projects/spring-boot).
 
-Podrás ejecutar el proyecto usando Gradle ejecutando el siguiente comando en la carpeta donde esté el fichero `build.gradle`:
+In this _skeleton_, we have left a [Controller](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/Controller.html) and an in-memory [Repository](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/Repository.html) for you to complete. You can create the classes and methods you deem necessary.
+
+You can run the project using Gradle by executing the following command in the folder where the `build.gradle` file is located:
+
 
 ```bash
 $ ./gradlew bootRun
 ```
 
-**La persistencia de datos no forma parte del objetivo del reto**. Si no vas a usar el esqueleto que te proporcionamos, te sugerimos que la simplifiques tanto como puedas (con una base de datos embebida, "persistiendo" los objetos en memoria, usando un fichero...).
 
-**El diseño de una interfaz gráfica tampoco** forma parte del alcance del reto, por tanto, no es necesario que la implementes.
+**Data persistence is not part of the challenge objective**. If you are not going to use the provided skeleton, we suggest you simplify it as much as possible (using an embedded database, "persisting" objects in memory, using a file...).
 
-**Nota:** A lo que más importancia damos es a tener un código limpio y de calidad.
+**Designing a graphical interface** is also not within the scope of the challenge; therefore, it is not necessary to implement it.
 
-### Requisitos mínimos
+**Note:** We prioritize having clean and quality code.
 
-A continuación se enumeran los requisitos mínimos para ejecutar el proyecto:
+### Minimum Requirements
+
+Below are the minimum requirements to run the project:
 
 - Java 17
 - Gradle 8.6
 
-Otras versiones pueden funcionar, pero no han sido probadas y pueden presentar errores.
+Other versions may work, but they have not been tested and may have errors.
 
-## :white_check_mark: Criterios de aceptación
+## :white_check_mark: Acceptance Criteria
 
-- El código debe compilar y ser ejecutable :dancer:
+- The code must compile and be executable :dancer:
 
-- Debes proporcionar 3 endpoints:
+- You must provide 3 endpoints:
 
-  - Uno para la obtención de los productos por parte de un cliente del catálogo Straumann, donde pueda ver los productos y filtrarlos por categoría, por marca y por orden de precio.
+  - One for the retrieval of products by a Straumann catalog client, where they can view products and filter them by category, brand, and price order.
 
-  - Otro para la posible modificación de precios o disponibilidad de uno de los productos por parte del equipo de gestión de los productos de Straumann.
+  - Another for the possible modification of prices or availability of one of the products by the Straumann product management team.
 
-  - Otro para la posible inclusion de nuevos productos por parte del equipo de gestión de los productos de Straumann.
+  - Another for the possible inclusion of new products by the Straumann product management team.
 
-### Otras
+## Code Submission
 
-- Se valorará de manera positiva la inclusión de pruebas automáticas de código o testing.
+- If selected as a candidate, you will receive instructions and hyperlinks via email to a Git repository on GitHub where you will need to deposit the code you have developed.
 
-- Puedes añadir cualquier cosa que veas relevante para la legibilidad o mantenimiento del código.
+### Others
+
+- The inclusion of automatic code tests or testing will be positively evaluated.
+
+- You can add anything you find relevant for code readability or maintenance.
 
 ### Good luck :four_leaf_clover:
